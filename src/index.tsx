@@ -1,12 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-
+import './style.css';
 import { App } from './App';
 
-const root = createRoot(document.getElementById('app'));
+const root = createRoot(document.getElementById('app')!);
 
 root.render(
   <StrictMode>
-    <App name="StackBlitz" />
+    <App />
   </StrictMode>
 );
